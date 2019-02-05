@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-sm-2">
+        <mat-form-field>
+            <input matInput placeholder="Enter City / Town Name" [(ngModel)]="cityName">
+            <mat-hint>Country: UK</mat-hint>
+        </mat-form-field>
+    </div>
+    <div class="col-sm-1">
+    <button mat-fab (click)="onSearch()">Search</button>
+    </div>
+</div>
+
+<br><br>
+<app-weather-list></app-weather-list>
